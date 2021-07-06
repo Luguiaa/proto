@@ -1,4 +1,4 @@
-export const card = (container, position) => {
+export default function card(container, position) {
   fetch("/products.json")
     .then((res) => res.json())
     .then((products) => {
