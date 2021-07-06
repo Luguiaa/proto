@@ -1,33 +1,33 @@
 #quiz {
-    text-align: center;
-    margin-top: 50px;
+  text-align: center;
+  margin-top: 50px;
 }
 
 #anchors {
-    display: block;
-    margin-top: 75px;
+  display: block;
+  margin-top: 75px;
 }
 
 button {
-    background-color: Transparent;
-    background-repeat:no-repeat;
-    border: none;
-    cursor:pointer;
-    overflow: hidden;
-    outline:none;
-    color: #262626;
-    text-decoration: none;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  color: #262626;
+  text-decoration: none;
 }
 
-button+button {
-    margin-left: 50px;
+button + button {
+  margin-left: 50px;
 }
 
 button:hover {
-    transition: color 0.3s;
-    color: rgb(0, 174, 255);
+  transition: color 0.3s;
+  color: rgb(0, 174, 255);
 }
 
 h4 {
-    margin-top: 50px;
+  margin-top: 50px;
 }

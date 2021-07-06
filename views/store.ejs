@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+  <%- include('components/head'); %>
+  <body>
+    <%- include('components/header'); %> <%- include('components/showcase'); %>
+    <main
+      style="display: flex; flex-wrap: wrap; justify-content: space-around"
+    ></main>
+    <script src="../js/card.js"></script>
+    <script>
+      card(".cardsContainer", 0);
+      card(".cardsContainer", 1);
+      card(".cardsContainer", 2);
+      card(".cardsContainer", 3);
+      card(".cardsContainer", 4);
+      card(".cardsContainer", 5);
+      card(".cardsContainer", 6);
+      card(".cardsContainer", 7);
+      card(".cardsContainer", 8);
+      card(".cardsContainer", 9);
+    </script>
+  </body>
+</html>
