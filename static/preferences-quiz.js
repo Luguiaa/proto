@@ -31,14 +31,14 @@ const processData = async (_) => {
       if (res.success !== true) {
         err();
         return;
+      } else {
+        window.location.href = "/account";
       }
-      console.log("success");
     })
     .catch((_) => err);
 };
 
 const quiz = (_) => {
-  console.log(preferences);
   switch (stage) {
     case 0:
       title.innerHTML = "¿Deseas habilitar la compra asistida?";
@@ -90,27 +90,9 @@ const quiz = (_) => {
       info.style.color = "#222222";
       info.innerHTML = "Queremos conocer tus gustos";
 
-      noButton.onclick = (_) => {
-        {
-          stage++;
-          quiz();
-          processData();
-        }
-      };
-      yesButton.onclick = (_) => {
-        preferences.cholesterol = true;
-        stage++;
-        quiz();
-        processData();
-      };
-      break;
-    case 4:
-      title.innerHTML = "Te recomendamos los siguientes productos";
-      info.innerHTML = "Para continuar tendrás que iniciar sesión";
-      container.innerHTML = "";
-      card("#anchors", 0);
-      card("#anchors", 1);
-      break;
+      noButton.onclick = processData;
+      yesButton.onclick = processData;
+    break;
   }
 };
 
