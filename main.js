@@ -19,6 +19,10 @@ app.get("/account", (req, res) => {
   res.render("account");
 });
 
+app.get("/checkout", (req, res) => {
+  res.render("checkout");
+});
+
 app.post("/api/receiveInterestData", (req, res) => {
   console.log(req.body);
   try {
