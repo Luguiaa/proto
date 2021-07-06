@@ -1,60 +1,16 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toltekatl</title>
-    <link rel="stylesheet" href="src/styles.css" />
-    <link rel="stylesheet" href="src/form.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
-      rel="stylesheet"
-    />
-    <meta charset="UTF-8" />
-  </head>
 
-  <body>
-    <script src="src/form.js"></script>
-    <header>
-      <a href="/"><h1>Toltekatl</h1></a>
-      <ul><li><a href="/store.html">Ve a la tienda</a></li><li><a href="">sdfsdfds</a></li></ul>
-    </header>
-    <main class="main">
-      <h2>¿Quieres utilizar compra asistida?</h2>
-      <ul>
-        <li>
-          <a onclick="form()"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-check-lg"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M13.485 1.431a1.473 1.473 0 0 1 2.104 2.062l-7.84 9.801a1.473 1.473 0 0 1-2.12.04L.431 8.138a1.473 1.473 0 0 1 2.084-2.083l4.111 4.112 6.82-8.69a.486.486 0 0 1 .04-.045z"></svg></a>
-          <p>Sí</p>
-        </li>
-        <li>
-          <a href="/store.html"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-x-lg"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z">
-                </svg></a>
-          <p>No</p>
-        </li>
-      </ul>
-    </main>
-    <footer>
-      <p>Toltekatl es una platforma por Luguiaa para la asociación OBIO.</p>
-    </footer>
-  </body>
+    <!-- Libraries -->
+    <script src="./js/dom-handler.js"></script>
+</head>
+<body class="container">
+    <component name="header"/>
+    <component name="form"/>
+</body>
 </html>
