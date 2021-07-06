@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: #5e6738;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #d0973c;
+  font-family: "Permanent Marker", cursive;
+}
+
+header h1 {
+  font-size: 3.5rem;
+  padding: 15px;
+}
+
+header a {
+  color: #d0973c;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+footer {
+  text-align: center;
+  font-size: 2.3rem;
+  padding-top: 30px;
+}

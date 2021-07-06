@@ -1,0 +1,43 @@
+main {
+  display: flex;
+  flex-direction: column;
+  color: #323e48;
+}
+
+main h2 {
+  text-align: center;
+  font-size: 4rem;
+  padding: 100px;
+}
+
+main ul {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+main ul li > a {
+  padding: 20px;
+}
+
+main ul li a:hover {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+  cursor: pointer;
+}
+
+main ul li a {
+  color: #323e48;
+}
+
+main ul li svg {
+  height: 90px;
+  width: 90px;
+}
+
+main ul li p {
+  text-align: center;
+  font-size: 2.5rem;
+  padding-top: 10px;
+}
