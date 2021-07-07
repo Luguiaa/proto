@@ -23,6 +23,10 @@ app.get("/checkout", (req, res) => {
   res.render("checkout");
 });
 
+app.get("/details", (req, res) => {
+  res.render("details");
+});
+
 app.post("/api/receiveInterestData", (req, res) => {
   console.log(req.body);
   try {
